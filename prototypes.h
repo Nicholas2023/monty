@@ -1,5 +1,5 @@
-#ifndef _PROTOTYPES_H_
-#define _PROTOTYPES_H_
+#ifndef PROTOTYPES_H_
+#define PROTOTYPES_H_
 
 /* Stack manipulation functions */
 void op_push(stack_t **stack, unsigned int line_number);
