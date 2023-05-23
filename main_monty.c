@@ -1,4 +1,6 @@
 #include "monty.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 global_t global;
 
@@ -87,7 +89,7 @@ int main(int argc, char **argv)
 	}
 	atexit(free_stack);
 
-	while (getline(&line, &line_length, fp) != -1)
+	while (fgets(line, line_length, fp) != NULL)
 	{
 		global.op_name = strtok(line, "\n\t\r\v\f ");
 		global.value = strtok(NULL, "\n\t\r\v\f ");

@@ -1,10 +1,10 @@
 #ifndef MONTY_H
 #define MONTY_H
-
-#include "glb.h"
-
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
 #include <string.h>
 #include <ctype.h>
 
@@ -42,7 +42,7 @@ typedef struct instruction_s
 	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
-
+#include "glb.h"
 #include "prototypes.h"
 
 #endif /* MONTY_H */
