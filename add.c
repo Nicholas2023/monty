@@ -1,10 +1,9 @@
 #include "monty.h"
 
 /**
- * op_add       - Adds the top two elements of @stack
- *
- * @stack:        A doubly linked list
- * @line_number:  Current line number in monty script file
+ * op_add - Adds the top two elements of @stack
+ * @stack: A doubly linked list
+ * @line_number: Current line number in monty script file
  */
 
 void op_add(stack_t **stack, unsigned int line_number)
